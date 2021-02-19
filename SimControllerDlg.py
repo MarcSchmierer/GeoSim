@@ -210,7 +210,7 @@ class SimControllerDlg(QDialog):
                         elif ftype in ['Integer','Integer64']:
                             myfmt = '%' + str(len(code)) + 'd'
                             svalue = myfmt % int(value)
-                        elif ftype in ['Real','Double']:
+                        elif ftype in ['Real','Double','real','double']:
                             if float(value) >= 0:
                                 decnum = len(code) - len(str(int(value))) - 1
                             elif float(value) < 0:
